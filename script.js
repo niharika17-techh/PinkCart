@@ -124,8 +124,9 @@ const PINKLIST_KEY = "pinkCart_Pinklist";
 
 let Pinklist = JSON.parse(localStorage.getItem(PINKLIST_KEY)) || [];
 
-function savePinklist() {
-}
+function savePinklist(){
+  localStorage.setItem(PINKLIST_KEY, JSON.stringify(Pinklist));
+} 
 function updatePinklistUI() {
   const nav = document.getElementById("pinklistNav");
   if (!nav) return;
