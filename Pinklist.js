@@ -7,8 +7,8 @@
 const API_BASE = "http://localhost:3008";
 const TOKEN_KEY = "pinkCart_token";
 
-const noticeEl = document.getElementById("wishlistNotice");
-const gridEl = document.getElementById("wishlistGrid");
+const noticeEl = document.getElementById("PinklistNotice");
+const gridEl = document.getElementById("PinklistGrid");
 const logoutBtn = document.getElementById("logoutBtn");
 
 function getToken() {
